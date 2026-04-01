@@ -17,8 +17,8 @@ section {
     background-color: #fff;
     color: var(--text-color);
     font-family: var(--default-font);
-    padding-left: 138.188px;
-    padding-right: 138.188px;
+    padding-left: 70px;
+    padding-right: 70px;
     padding-top: 60px;
 }
 .nav-toggle {
@@ -208,7 +208,6 @@ h1 span {
     padding-bottom: 60px;
 }
 .about-container {
-    max-width: 1140px;
     margin: 0 auto;
     padding: 0 12px;
     display: flex;
@@ -216,11 +215,8 @@ h1 span {
     align-items: center;
 }
 .about-header {
-    max-width: 1140px;
     font-family: var(--heading-font);
-    padding-bottom: 60px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding: 0px 12px 60px 12px;
 }
 .about-header h2 {
     font-size: 32px;
@@ -244,27 +240,17 @@ h1 span {
     margin-bottom: 0;
 }
 .profile-wrapper {
-    position: relative;
-    text-align: center;
     padding: 20px;
-}
-.profile-circle-wrapper {
-    position: relative;
-    width: 280px;
-    height: 280px;
-    margin: 0 auto 40px;
-    border-radius: 50%;
-    overflow: hidden;
-    padding: 1px;
-    border: 6px solid var(--accent-color);
-    box-shadow: 0 10px 30px color-mix(in srgb, var(--accent-color), transparent 80%);
+    
 }
 .profile-img {
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 10px 40px rgba(6, 92, 194, 0.2);
+    width: 270px;
+    height: 270px;
+    margin: 0 40px 20px 0px;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px color-mix(in srgb, var(--accent-color), transparent 80%);
     position: relative;
-    z-index: 2;
+    border: 6px solid var(--accent-color);
 }
 .signature-box {
     text-align: center;
@@ -272,16 +258,14 @@ h1 span {
 }
 .signature {
     max-width: 200px;
-    height: auto;
     margin-bottom: 15px;
     opacity: 0.8;
 }
 .quote {
     font-family: var(--default-font);
-    font-size: 15px;
+    font-size: 12px;
     color: var(--text-muted);
     font-style: italic;
-    max-width: 250px;
     margin: 0 auto;
     line-height: 1.4;
 }
@@ -296,24 +280,28 @@ h1 span {
 .about-info p {
     font-family: var(--default-font);
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 30px;
     opacity: 0.9;
+    font-weight: 300;
 }
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-bottom: 40px;
 }
 .skill-item {
     text-align: center;
-    padding: 15px;
+    padding-top: 15px;
     border-radius: 10px;
+    width: 211px;
+    height: 219px;
     background: color-mix(in srgb, var(--accent-color), transparent 96%);
     border: 1px solid color-mix(in srgb, var(--accent-color), transparent 90%);
     transition: all 0.3s ease-in-out;
+
     
 }
 .skill-item:hover {
@@ -342,6 +330,9 @@ h1 span {
     font-size: 14px;
     color: var(--text-muted);
     font-family: var(--default-font);
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .journey-timeline {
     margin-top: 30px;
